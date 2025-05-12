@@ -1,12 +1,442 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.min.css">
-    <title>Document</title>
-</head>
-<body>
-   
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3379e155de.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/styles.min.css" />
+    <title>Evaluation | CSS | Harald Duplouis</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-wrapper">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href=""><img src="./img/hicks-thomas-logo-new-white.png" alt="" /></a>
+
+        <!-- Nav Links -->
+        <nav class="large-version-menu">
+          <a href="">Home</a>
+          <a href="attorneys_page.html">Attorneys</a>
+          <a href="">Practice Areas</a>
+          <a href="">News</a>
+          <a href="">Vidéo Center</a>
+          <a href="contact.html">Contact</a>
+          <!-- Logo Loupe -->
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+        </nav>
+        <nav class="mobile-version-menu"></nav>
+      </div>
+
+      <!-- Background Image -->
+      <div class="background-image-container">
+        <video src="./img/iStock-1240812517.mp4" autoplay loop muted></video>
+      </div>
+
+      <div class="header-text">
+        <h1>Hustle Never Sleeps.</h1>
+        <p>
+          Houston's relentless pace demands a legal team that never quits. We are around-the-clock advocates, providing unwavering support when you
+          need it most.
+        </p>
+        <div class="header-buttons-container">
+          <a href="" class="button button-blue">
+            Contact Hicks Thomas
+            <i class="fa-regular fa-circle-play"></i>
+          </a>
+          <a href="" class="button button-black">
+            More
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section 1 | Texas Triald Lawyers -->
+    <section class="texas-trial-section">
+      <div class="main-wrapper">
+        <div class="two-elements-grid-container">
+          <!-- Left Part -->
+          <div>
+            <p class="subtitle blue-subtitle">From the Board Room to the Courtroom</p>
+            <h1>Texas Trial Lawyers</h1>
+            <p class="article-text-content">
+              Our litigation strategy is always crafted with your business objectives in mind. We invest the time to learn your business and
+              understand your goals before developing our litigation game plan. This knowledge enables us to put you in the best position for success
+              in the world of dispute resolution.
+            </p>
+            <p class="article-text-content">
+              We know that the realm of business litigation and disputes can be uncomfortable. That is why our first question is always “What can we
+              do to help?” Our second question is always “What can we do better?” Knowing the answers to these questions helps solidify our
+              relationships with our client partners.
+            </p>
+          </div>
+
+          <!-- Right Part -->
+          <div>
+            <blockquote class="citation">
+              <p>Hicks Thomas LLP is an accomplished team of commercial litigators with a wealth of trial experience.</p>
+              <cite>Chambers USA</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 | Houston's Top -->
+    <section class="houstons-top-section"> 
+        <div class="main-wrapper">
+            <div class="two-elements-grid-container">
+                <div>
+                    <a href="" class="round-profile-image-container">
+                        <img src="./img/john-Deis-380x380-1.jpg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <p class="subtitle white-subtitle">A Unique Perspective</p>
+                    <h2>Houston's Top Litigation Attorneys</h2>
+                    <p class="article-text-content">How do our clients describe us? They call us sophisticated legal strategists and creative problem solvers, bringing unique perspectives to every case. Our Houston attorneys' diverse experience and proven results offer peace of mind, even in high-stakes situations. We have the resources to handle complex cases while providing personalized attention to your company's needs.</p>
+                    <!-- White Button -->
+                    <a href="button white-button">Meet Our Attorneys</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 | A Legacy of Winning -->
+    <section class="legacy-of-winning-section">
+
+        <div class="main-wrapper">
+
+            <!-- Section 3 | Header -->
+            <div class="section-header">
+                <!-- Subtitle -->
+                <p class="subtitle blue-subtitle">Our Work</p>
+                <!-- Title -->
+                <h2 class="large-title">A Legacy of Winning</h2>
+                <!-- Text Content -->
+                <p class="article-text-content">Hicks Thomas LLP is a litigation boutique with extensive expertise across a wide range of industries. We represent both plaintiffs and defendants in business and tort litigation. Our experience includes energy, environmental and toxic torts, antitrust and anti-competitive practices, employment and labor disputes, as well as product liability cases. Since our founding in 1997, we have consistently delivered successful results in complex cases, building a reputation for excellence, efficiency, and outstanding client service.</p>
+            </div>
+
+            <!-- Grid Articles -->
+            <div class="grid-articles-collection">
+
+                <!-- Article 1 -->
+                <a class="grid-article">
+                    <!-- Text Part -->
+                    <h3>Appellate Litigation</h3>
+                    <p>Hicks Thomas LLP specializes in appellate litigation, adeptly handling appeals of trial court rulings. Our skilled lawyers anticipate, prepare for, and successfully argue appeals, ensuring favorable outcomes in higher courts.</p>
+                    <!-- Separator -->
+                    <hr class="separator">
+                    <!-- Learn More Button -->
+                    <p class="learn-more-button">Learn More</p>
+                </a>
+
+                <!-- Article 2 -->
+                <a class="grid-article">
+                    <!-- Text Part -->
+                    <h3>Business Litigation</h3>
+                    <p>Hicks Thomas LLP excels in litigating complex business disputes, devising strategic solutions tailored to your business needs, ensuring the best possible outcomes.</p>
+                    <!-- Séparator -->
+                    <hr class="separator">
+                    <!-- Learn More Button -->
+                    <p class="learn-more-button">Learn More</p>
+                </a>
+
+                <!-- Article 3 -->
+                <a class="grid-article">
+                    <!-- Text Part -->
+                    <h3>Construction Litigation</h3>
+                    <p>We efficiently resolve construction disputes at all stages, minimizing disruption and expense. Through negotiation, litigation, or arbitration, we protect clients' investments and relationships in the construction industry.</p>
+                    <!-- Séparator -->
+                    <hr class="separator">
+                    <!-- Learn More Button -->
+                    <p class="learn-more-button">Learn More</p>
+                </a>
+
+                <!-- Article 4 -->
+                <a class="grid-article">
+                    <!-- Text Part -->
+                    <h3>Energy Litigation</h3>
+                    <p>Hicks Thomas LLP's energy trial lawyers handle complex legal disputes in the high-risk oil and gas sector. With extensive court and arbitration experience, we protect your interests, minimize risk, and maximize returns.</p>
+                    <!-- Séparator -->
+                    <hr class="separator">
+                    <!-- Learn More Button -->
+                    <p class="learn-more-button">Learn More</p>
+                </a>
+
+                <!-- Article 5 -->
+                <a class="grid-article">
+                    <!-- Text Part -->
+                    <h3>Environmental & Natural Resources Litigation</h3>
+                    <p>Hicks Thomas handles environmental claims, navigating regulations and defending businesses in air, water, soil, and groundwater litigation, backed by a proven track record of success in complex environmental cases.</p>
+                    <!-- Séparator -->
+                    <hr class="separator">
+                    <!-- Learn More Button -->
+                    <p class="learn-more-button">Learn More</p>
+                </a>
+
+                <!-- Article 6 -->
+                <a class="grid-article">
+                    <!-- Text Part -->
+                    <h3>Health Care Litigation</h3>
+                    <p>Hicks Thomas LLP excels in managed care litigation, representing organizations in high-stakes disputes involving ERISA, reimbursement claims, and provider networks, delivering strategic counsel and precedent-setting victories nationwide.</p>
+                    <!-- Séparator -->
+                    <hr class="separator">
+                    <!-- Learn More Button -->
+                    <p class="learn-more-button">Learn More</p>
+                </a>
+
+                <!-- Article 7 -->
+                <a class="grid-article">
+                    <!-- Text Part -->
+                    <h3>Insurance Coverage Litigation</h3>
+                    <p>Hicks Thomas LLP’s insurance group represents insurers and reinsurers in complex coverage disputes, offering expertise in liabilities, property, and health policies, and delivering efficient, cost-effective resolutions through litigation or alternative dispute mechanisms.</p>
+                    <!-- Séparator -->
+                    <hr class="separator">
+                    <!-- Learn More Button -->
+                    <p class="learn-more-button">Learn More</p>
+                </a>
+
+                <!-- Article 8 -->
+                <a class="grid-article">
+                    <!-- Text Part -->
+                    <h3>Intellectual Property & Trade Secret Litigation</h3>
+                    <p>Hicks Thomas protects trade secrets, handling disputes in state and federal courts under laws like the Texas Uniform Trade Secrets Act and the Defend Trade Secrets Act, safeguarding your valuable information assets.</p>
+                    <!-- Séparator -->
+                    <hr class="separator">
+                    <!-- Learn More Button -->
+                    <p class="learn-more-button">Learn More</p>
+                </a>
+
+                <!-- Article 9 -->
+                <a class="grid-article">
+                    <!-- Text Part -->
+                    <h3>Labor & Employment Litigation</h3>
+                    <p>Hicks Thomas defends employment lawsuits, counsels on workplace laws, and represents clients before agencies like the NLRB, EEOC, and OSHA, offering decades of experience in employment law litigation.</p>
+                    <!-- Séparator -->
+                    <hr class="separator">
+                    <!-- Learn More Button -->
+                    <p class="learn-more-button">Learn More</p>
+                </a>
+
+                <!-- Article 10 -->
+                <a class="grid-article">
+                    <!-- Text Part -->
+                    <h3>Plaintiff's Litigation</h3>
+                    <p>Hicks Thomas LLP leverages over 25 years of trial experience to represent plaintiffs in high-stakes disputes, offering flexible fee arrangements and delivering proven results in personal injury, business, and intellectual property cases.</p>
+                    <!-- Séparator -->
+                    <hr class="separator">
+                    <!-- Learn More Button -->
+                    <p class="learn-more-button">Learn More</p>
+                </a>
+
+                <!-- Article 11 -->
+                <a class="grid-article">
+                    <!-- Text Part -->
+                    <h3>Real Estate Litigation</h3>
+                    <p>Hicks Thomas excels in real estate litigation, offering pre-litigation evaluation and strategy to protect clients' rights through negotiation, litigation, or arbitration, leveraging deep expertise in commercial real estate disputes.</p>
+                    <!-- Séparator -->
+                    <hr class="separator">
+                    <!-- Learn More Button -->
+                    <p class="learn-more-button">Learn More</p>
+                </a>
+
+                <!-- Article 12 -->
+                <a class="grid-article dark-article">
+                    <!-- Text Part -->
+                    <h3>Get Started Here</h3>
+                    <p>Reach out to Hicks Thomas LLP for trusted legal support. Our experienced attorneys are here to safeguard your business and deliver solid results.</p>
+                    <!-- Séparator -->
+                    <hr class="separator">
+                    <!-- Learn More Button -->
+                    <p class="learn-more-button">Learn More</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 | Logos Gallery -->
+    <section class="logos-gallery">
+
+        <div class="main-wrapper logos-gallery-flex">
+            <!-- Logo Single -->
+            <div class="logos-gallary-image">
+                <a href="./img/HBF-LifeFellow.png"></a>
+            </div>
+
+            <!-- Logo Single -->
+            <div class="logos-gallary-image">
+                <a href="./img/HBF-LifeFellow.png"></a>
+            </div>
+
+            <!-- Logo Single -->
+            <div class="logos-gallary-image">
+                <a href="./img/HBF-LifeFellow.png"></a>
+            </div>
+
+            <!-- Logo Single -->
+            <div class="logos-gallary-image">
+                <a href="./img/HBF-LifeFellow.png"></a>
+            </div>
+
+            <!-- Logo Single -->
+            <div class="logos-gallary-image">
+                <a href="./img/HBF-LifeFellow.png"></a>
+            </div>
+
+           <!-- Logo Single -->
+           <div class="logos-gallary-image">
+            <a href="./img/HBF-LifeFellow.png"></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 5 | Former Justice Department -->
+    <section class="former-justice-section">
+        <div class="main-wrapper former-justice-articles-grid">
+
+            <!-- Article 1 -->
+            <div class="former-justice-article">
+                <!-- Title -->
+                <a href="" class="article-title">Former Justice Department Litigator Aleza Remis Joins Hicks Thomas</a>
+                <!-- Date -->
+                <p class="article-date">May 5, 2025</p>
+                <!-- Article Body -->
+                <p class="article-content">Ms. Remis formerly led DOJ’s Texas Health Care Fraud Strike Force  Hicks Thomas LLP announced today that Aleza Remis, former assistant deputy chief of the Department of Justice Health Care Fraud Unit, has joined the firm’s Houston office as senior counsel.  “We are thrilled to welcome Aleza to the firm,”…</p>
+                <!-- Button -->
+                <a href="" class="button button-blue">Full Text</a>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="former-justice-article">
+                <!-- Title -->
+                <a href="" class="article-title">Hicks Thomas Partner John B. Thomas Named to Lawdragon List of 100 Managing Partners You Need to Know</a>
+                <!-- Date -->
+                <p class="article-date">April 18, 2025</p>
+                <!-- Article Body -->
+                <p class="article-content">Hicks Thomas LLP is pleased to announce that partner John B. Thomas has been named to the 2025 Lawdragon 100 Managing Partners You Need to Know guide, a list of lawyers that Lawdragon describes as the most admired figures in law firm leadership.  “This year’s honorees were all selected for…</p>
+                <!-- Button -->
+                <a href="" class="button button-blue">Full Text</a>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="former-justice-article">
+                <!-- Title -->
+                <a href="" class="article-title">Hicks Thomas Secures Major Win at Texas Supreme Court</a>
+                <!-- Date -->
+                <p class="article-date">March 25, 2025</p>
+                <!-- Article Body -->
+                <p class="article-content">Ruling marks milestone in defining role of Texas’ new business court  Hicks Thomas LLP has secured a significant victory at the Texas Supreme Court in a closely watched case impacting the state’s new business court system.  The dispute arose from a $15 million jury verdict and final judgment in DeWitt…</p>
+                <!-- Button -->
+                <a href="" class="button button-blue">Full Text</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="main-wrapper footer-content-wrapper">
+            <!-- Logo -->
+            <a href="./img/hicks-thomas-logo-new-white.png"></a>
+
+            <!-- Places Informations -->
+            <div class="places-grid-container">
+
+                <!-- Place 1 -->
+                <div class="place-infos">
+                    <!-- Title -->
+                    <h4 class="place-title">Houston</h4>
+                    <!-- Adress -->
+                    <p class="adress">700 Louisiana St.
+                        Suite 2300
+                        Houston, TX 77002</p>
+                    <!-- Phone -->
+                    <a href="" class="phone-number">713-547-9100</a>
+                    <!-- Map Link -->
+                    <a href="" class="map-link"><i class="fa-solid fa-location-dot"></i>  Map & Directions</a>
+                </div>
+
+                <!-- Place 2 -->
+                <div class="place-infos">
+                    <!-- Title -->
+                    <h4 class="place-title">Austin</h4>
+                    <!-- Adress -->
+                    <p class="adress">111 Congress Ave.
+                        Suite 1010
+                        Austin, TX 78701</p>
+                    <!-- Phone -->
+                    <a href="" class="phone-number">512-827-7990</a>
+                    <!-- Map Link -->
+                    <a href="" class="map-link"><i class="fa-solid fa-location-dot"></i>  Map & Directions</a>
+                </div>
+
+                <!-- Place 3 -->
+                <div class="place-infos">
+                    <!-- Title -->
+                    <h4 class="place-title">Amarillo</h4>
+                    <!-- Adress -->
+                    <p class="adress">619 S. Tyler St.
+                        Suite 80B
+                        Amarillo, TX 79101</p>
+                    <!-- Phone -->
+                    <a href="" class="phone-number">806-310-9990</a>
+                    <!-- Map Link -->
+                    <a href="" class="map-link"><i class="fa-solid fa-location-dot"></i>  Map & Directions</a>
+                </div>
+
+                <!-- Place 4 -->
+                <div class="place-infos">
+                    <!-- Title -->
+                    <h4 class="place-title">Beaumont</h4>
+                    <!-- Adress -->
+                    <p class="adress">2615 Calder Ave.
+                        Suite 720
+                        Beaumont, TX 77702</p>
+                    <!-- Phone -->
+                    <a href="" class="phone-number">409-241-7252</a>
+                    <!-- Map Link -->
+                    <a href="" class="map-link"><i class="fa-solid fa-location-dot"></i>  Map & Directions</a>
+                </div>
+
+                <!-- Place 5 -->
+                <div class="place-infos">
+                    <!-- Title -->
+                    <h4 class="place-title">Sacramento</h4>
+                    <!-- Adress -->
+                    <p class="adress">701 University Ave.
+                        Suite 106
+                        Sacramento, CA 95825</p>
+                    <!-- Phone -->
+                    <a href="" class="phone-number">916-447-4900</a>
+                    <!-- Map Link -->
+                    <a href="" class="map-link"><i class="fa-solid fa-location-dot"></i>  Map & Directions</a>
+                </div>
+
+            </div>
+
+            <!-- Social Medias Gallery -->
+            <div class="social-medias">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+        
+        <!-- Disclaimer -->
+        <p class="footer-disclaimer">UNLESS OTHERWISE NOTED, OUR LAWYERS ARE NOT CERTIFIED BY THE TEXAS BOARD OF LEGAL SPECIALIZATION. The publications contained in this site do not constitute legal advice. Legal advice can only be with knowledge of the clients specific facts. By putting these publications on our website, we do not intend to create a lawyer-client relationship with the user. Materials may not reflect the most current legal developments, verdicts or settlements. This information should in no way be taken as an indication for future results</p>
+
+        <!-- Copyrightes -->
+        <div class="copyrights-section">
+            <p>© 2025 <a href="">Hicks Thomas LLP</a> | <a href="">Privacy Policy</a> | <a href="">Site Map</a></p>
+            <p><a href="">Law Firm Website Design</a> by Dan Gilroy Design</p>
+        </div>
+    </footer>
+  </body>
 </html>
