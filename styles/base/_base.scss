@@ -1,0 +1,23 @@
+// Typo
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    transition: 0.3s all ease-in-out;
+}
+.main-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+
+    @media screen and (min-width:400px) {
+        width: 98%;
+        padding: 0 10px;
+    }
+    @media screen and (min-width:1024px) {
+        width: 90%;
+    
+    }
+
+}
