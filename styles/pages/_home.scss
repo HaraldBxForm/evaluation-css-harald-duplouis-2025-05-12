@@ -222,3 +222,11 @@
     padding: 6rem 0;
     background-color: rgb(7, 68, 175);
 }
+
+.logos-gallery-grid {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(12,  1fr);
+
+    
+}
