@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3379e155de.js" crossorigin="anonymous"></script>
 
@@ -43,7 +47,7 @@
         <video src="./img/iStock-1240812517.mp4" autoplay loop muted></video>
       </div>
 
-      <div class="header-text-container">
+      <div class="header-text-container main-wrapper">
         <div class="header-text">
           <h1 class="header-title">Hustle Never Sleeps.</h1>
           <p>
@@ -69,25 +73,33 @@
       <div class="main-wrapper">
         <div class="two-elements-grid-container">
           <!-- Left Part -->
-          <div>
-            <p class="subtitle blue-subtitle">From the Board Room to the Courtroom</p>
-            <h1>Texas Trial Lawyers</h1>
-            <p class="article-text-content">
+          <div class="left-part">
+            <p class="subtitle blue-subtitle">
+              From the Board Room to the Courtroom
+              <i class="fa-solid fa-arrow-right"></i>
+            </p>
+            <h2 class="section-title">Texas Trial Lawyers</h2>
+            <p class="article-text-content grey-p">
               Our litigation strategy is always crafted with your business objectives in mind. We invest the time to learn your business and
               understand your goals before developing our litigation game plan. This knowledge enables us to put you in the best position for success
               in the world of dispute resolution.
             </p>
-            <p class="article-text-content">
-              We know that the realm of business litigation and disputes can be uncomfortable. That is why our first question is always “What can we
-              do to help?” Our second question is always “What can we do better?” Knowing the answers to these questions helps solidify our
-              relationships with our client partners.
+            <p class="article-text-content grey-p">
+              We know that the realm of
+              <a href="">business litigation</a>
+              and disputes can be uncomfortable. That is why our first question is always “What can we do to help?” Our second question is always
+              “What can we do better?” Knowing the answers to these questions helps solidify our relationships with our client partners.
             </p>
           </div>
 
           <!-- Right Part -->
-          <div>
+          <div class="right-part">
             <blockquote class="citation">
-              <p>Hicks Thomas LLP is an accomplished team of commercial litigators with a wealth of trial experience.</p>
+              <p>
+                <i class="fa-solid fa-quote-left"></i>
+                Hicks Thomas LLP is an accomplished team of commercial litigators with a wealth of trial experience.
+                <i class="fa-solid fa-quote-right"></i>
+              </p>
               <cite>Chambers USA</cite>
             </blockquote>
           </div>
@@ -102,18 +114,22 @@
           <div>
             <a href="" class="round-profile-image-container">
               <img src="./img/john-Deis-380x380-1.jpg" alt="" />
+              <p class="photo-name">John Deis</p>
             </a>
           </div>
           <div>
             <p class="subtitle white-subtitle">A Unique Perspective</p>
             <h2>Houston's Top Litigation Attorneys</h2>
-            <p class="article-text-content">
+            <p class="article-text-content white-p">
               How do our clients describe us? They call us sophisticated legal strategists and creative problem solvers, bringing unique perspectives
               to every case. Our Houston attorneys' diverse experience and proven results offer peace of mind, even in high-stakes situations. We have
               the resources to handle complex cases while providing personalized attention to your company's needs.
             </p>
             <!-- White Button -->
-            <a href="button white-button">Meet Our Attorneys</a>
+            <a href="" class="button button-white">
+              <i class="fa-solid fa-circle-play"></i>
+              Meet Our Attorneys
+            </a>
           </div>
         </div>
       </div>
@@ -127,9 +143,9 @@
           <!-- Subtitle -->
           <p class="subtitle blue-subtitle">Our Work</p>
           <!-- Title -->
-          <h2 class="large-title">A Legacy of Winning</h2>
+          <h2 class="section-title">A Legacy of Winning</h2>
           <!-- Text Content -->
-          <p class="article-text-content">
+          <p class="article-text-content grey-p">
             Hicks Thomas LLP is a litigation boutique with extensive expertise across a wide range of industries. We represent both plaintiffs and
             defendants in business and tort litigation. Our experience includes energy, environmental and toxic torts, antitrust and anti-competitive
             practices, employment and labor disputes, as well as product liability cases. Since our founding in 1997, we have consistently delivered
@@ -147,10 +163,12 @@
               Hicks Thomas LLP specializes in appellate litigation, adeptly handling appeals of trial court rulings. Our skilled lawyers anticipate,
               prepare for, and successfully argue appeals, ensuring favorable outcomes in higher courts.
             </p>
-            <!-- Separator -->
-            <hr class="separator" />
-            <!-- Learn More Button -->
-            <p class="learn-more-button">Learn More</p>
+            <div class="grid-article-bottom-part">
+              <!-- Separator -->
+              <hr class="separator" />
+              <!-- Learn More Button -->
+              <p class="learn-more-button"><i class="fa-regular fa-circle-play"></i> Learn More</p>
+            </div>
           </a>
 
           <!-- Article 2 -->
@@ -161,10 +179,12 @@
               Hicks Thomas LLP excels in litigating complex business disputes, devising strategic solutions tailored to your business needs, ensuring
               the best possible outcomes.
             </p>
-            <!-- Séparator -->
-            <hr class="separator" />
-            <!-- Learn More Button -->
-            <p class="learn-more-button">Learn More</p>
+            <div class="grid-article-bottom-part">
+              <!-- Séparator -->
+              <hr class="separator" />
+              <!-- Learn More Button -->
+              <p class="learn-more-button"><i class="fa-regular fa-circle-play"></i> Learn More</p>
+            </div>
           </a>
 
           <!-- Article 3 -->
@@ -176,9 +196,11 @@
               arbitration, we protect clients' investments and relationships in the construction industry.
             </p>
             <!-- Séparator -->
-            <hr class="separator" />
-            <!-- Learn More Button -->
-            <p class="learn-more-button">Learn More</p>
+            <div class="grid-article-bottom-part">
+              <hr class="separator" />
+              <!-- Learn More Button -->
+              <p class="learn-more-button"><i class="fa-regular fa-circle-play"></i> Learn More</p>
+            </div>
           </a>
 
           <!-- Article 4 -->
@@ -189,10 +211,12 @@
               Hicks Thomas LLP's energy trial lawyers handle complex legal disputes in the high-risk oil and gas sector. With extensive court and
               arbitration experience, we protect your interests, minimize risk, and maximize returns.
             </p>
-            <!-- Séparator -->
-            <hr class="separator" />
-            <!-- Learn More Button -->
-            <p class="learn-more-button">Learn More</p>
+            <div class="grid-article-bottom-part">
+              <!-- Séparator -->
+              <hr class="separator" />
+              <!-- Learn More Button -->
+              <p class="learn-more-button"><i class="fa-regular fa-circle-play"></i> Learn More</p>
+            </div>
           </a>
 
           <!-- Article 5 -->
@@ -203,10 +227,12 @@
               Hicks Thomas handles environmental claims, navigating regulations and defending businesses in air, water, soil, and groundwater
               litigation, backed by a proven track record of success in complex environmental cases.
             </p>
-            <!-- Séparator -->
-            <hr class="separator" />
-            <!-- Learn More Button -->
-            <p class="learn-more-button">Learn More</p>
+            <div class="grid-article-bottom-part">
+              <!-- Séparator -->
+              <hr class="separator" />
+              <!-- Learn More Button -->
+              <p class="learn-more-button"><i class="fa-regular fa-circle-play"></i> Learn More</p>
+            </div>
           </a>
 
           <!-- Article 6 -->
@@ -217,10 +243,12 @@
               Hicks Thomas LLP excels in managed care litigation, representing organizations in high-stakes disputes involving ERISA, reimbursement
               claims, and provider networks, delivering strategic counsel and precedent-setting victories nationwide.
             </p>
-            <!-- Séparator -->
-            <hr class="separator" />
-            <!-- Learn More Button -->
-            <p class="learn-more-button">Learn More</p>
+            <div class="grid-article-bottom-part">
+                <!-- Séparator -->
+                <hr class="separator" />
+                <!-- Learn More Button -->
+                <p class="learn-more-button"><i class="fa-regular fa-circle-play"></i> Learn More</p>
+            </div>
           </a>
 
           <!-- Article 7 -->
@@ -232,10 +260,12 @@
               property, and health policies, and delivering efficient, cost-effective resolutions through litigation or alternative dispute
               mechanisms.
             </p>
-            <!-- Séparator -->
-            <hr class="separator" />
-            <!-- Learn More Button -->
-            <p class="learn-more-button">Learn More</p>
+            <div class="grid-article-bottom-part">
+                <!-- Séparator -->
+                <hr class="separator" />
+                <!-- Learn More Button -->
+                <p class="learn-more-button"><i class="fa-regular fa-circle-play"></i> Learn More</p>
+            </div>
           </a>
 
           <!-- Article 8 -->
@@ -246,10 +276,12 @@
               Hicks Thomas protects trade secrets, handling disputes in state and federal courts under laws like the Texas Uniform Trade Secrets Act
               and the Defend Trade Secrets Act, safeguarding your valuable information assets.
             </p>
-            <!-- Séparator -->
-            <hr class="separator" />
-            <!-- Learn More Button -->
-            <p class="learn-more-button">Learn More</p>
+            <div class="grid-article-bottom-part">
+                <!-- Séparator -->
+                <hr class="separator" />
+                <!-- Learn More Button -->
+                <p class="learn-more-button"><i class="fa-regular fa-circle-play"></i> Learn More</p>
+            </div>
           </a>
 
           <!-- Article 9 -->
@@ -260,10 +292,12 @@
               Hicks Thomas defends employment lawsuits, counsels on workplace laws, and represents clients before agencies like the NLRB, EEOC, and
               OSHA, offering decades of experience in employment law litigation.
             </p>
-            <!-- Séparator -->
-            <hr class="separator" />
-            <!-- Learn More Button -->
-            <p class="learn-more-button">Learn More</p>
+            <div class="grid-article-bottom-part">
+                <!-- Séparator -->
+                <hr class="separator" />
+                <!-- Learn More Button -->
+                <p class="learn-more-button"><i class="fa-regular fa-circle-play"></i> Learn More</p>
+            </div>
           </a>
 
           <!-- Article 10 -->
@@ -274,10 +308,12 @@
               Hicks Thomas LLP leverages over 25 years of trial experience to represent plaintiffs in high-stakes disputes, offering flexible fee
               arrangements and delivering proven results in personal injury, business, and intellectual property cases.
             </p>
-            <!-- Séparator -->
-            <hr class="separator" />
-            <!-- Learn More Button -->
-            <p class="learn-more-button">Learn More</p>
+            <div class="grid-article-bottom-part">
+                <!-- Séparator -->
+                <hr class="separator" />
+                <!-- Learn More Button -->
+                <p class="learn-more-button"><i class="fa-regular fa-circle-play"></i> Learn More</p>
+            </div>
           </a>
 
           <!-- Article 11 -->
@@ -288,13 +324,16 @@
               Hicks Thomas excels in real estate litigation, offering pre-litigation evaluation and strategy to protect clients' rights through
               negotiation, litigation, or arbitration, leveraging deep expertise in commercial real estate disputes.
             </p>
-            <!-- Séparator -->
-            <hr class="separator" />
-            <!-- Learn More Button -->
-            <p class="learn-more-button">Learn More</p>
+            <div class="grid-article-bottom-part">
+                <!-- Séparator -->
+                <hr class="separator" />
+                <!-- Learn More Button -->
+                <p class="learn-more-button"><i class="fa-regular fa-circle-play"></i> Learn More</p>
+            </div>
           </a>
 
           <!-- Article 12 -->
+
           <a class="grid-article dark-article">
             <!-- Text Part -->
             <h3>Get Started Here</h3>
@@ -302,10 +341,12 @@
               Reach out to Hicks Thomas LLP for trusted legal support. Our experienced attorneys are here to safeguard your business and deliver solid
               results.
             </p>
-            <!-- Séparator -->
-            <hr class="separator" />
-            <!-- Learn More Button -->
-            <p class="learn-more-button">Learn More</p>
+            <div class="grid-article-bottom-part">
+                <!-- Séparator -->
+                <hr class="separator" />
+                <!-- Learn More Button -->
+                <p class="learn-more-button"><i class="fa-regular fa-circle-play"></i> Learn More</p>
+            </div>
           </a>
         </div>
       </div>

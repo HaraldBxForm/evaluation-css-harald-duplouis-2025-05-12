@@ -21,3 +21,46 @@ a {
     }
 
 }
+
+p {
+    font-size: 1.125rem;
+}
+
+.section-title {
+    font-size: 2.188rem;
+    margin-bottom: 16px;
+
+    @media screen and (min-width:1300px) {
+        font-size: 2.75rem;
+    }
+
+    @media screen and (min-width:1500px) {
+        font-size: 2.75rem;
+    }
+
+    @media screen and (min-width:1300px) {
+        font-size: 3.75rem;
+    }
+}
+
+.white-p {
+    color: white;
+    margin-bottom: 24px;
+}
+
+.grey-p {
+    color: #555;
+}
+
+.blue-subtitle {
+    color: #0744af;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 400;;
+}

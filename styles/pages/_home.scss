@@ -1,0 +1,224 @@
+// Section 1
+.texas-trial-section {
+  padding: 6rem 0;
+}
+
+.two-elements-grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+
+  .left-part {
+    grid-column: span 12;
+    text-align: center;
+
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+      grid-column: span 7;
+    }
+  }
+
+  .article-text-content {
+    margin-bottom: 24px;
+
+    a {
+      color: rgb(7, 68, 175);
+      text-decoration: underline;
+    }
+  }
+
+  .right-part {
+    grid-column: span 12;
+    text-align: center;
+    color: rgb(7, 68, 175);
+
+    @media screen and (min-width: 1024px) {
+      grid-column: span 5;
+    }
+
+    .citation {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 400;
+      font-style: normal;
+
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: 770px) {
+          font-size: 1.875rem;
+        }
+      }
+
+      cite {
+        font-size: 1.125rem;
+        font-weight: bold;
+        @media screen and (min-width: 770px) {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}
+
+// Section 2
+.houstons-top-section {
+  background-color: rgb(7, 68, 175);
+  padding: 6rem 0;
+  color: white;
+  .two-elements-grid-container {
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      grid-column: span 12;
+
+      p {
+        text-align: center;
+      }
+
+      @media screen and (min-width: 953px) {
+        text-align: left;
+        align-items: flex-start;
+
+        p {
+            text-align: left;
+          }
+      }
+
+      @media screen and (min-width: 1024px) {
+        grid-column: span 6;
+        p {
+            text-align: left;
+          }
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 953px) {
+      font-size: 1.75rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.round-profile-image-container {
+  position: relative;
+
+  img {
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    border: 30px solid rgb(112, 155, 228);
+  }
+
+  .photo-name {
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    translate: -50% 0;
+    background: linear-gradient(90deg, #0f3447, #0744af);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+  }
+}
+
+// Section 3
+
+.legacy-of-winning-section {
+    padding: 6rem 0;
+}
+
+.grid-articles-collection {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    justify-items: center;
+    align-items: flex-start;
+    gap: 1rem;
+
+    .grid-article {
+        grid-column: span 12;
+        padding: 20px;
+        background-color: rgb(243, 245, 249);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0.8rem;
+        align-self: stretch;
+        border-radius: 4px;
+
+        transition: 0.3s all ease-in-out;
+        box-shadow: rgba(149, 157, 165, 0.096) 0px 8px 24px;
+        
+        .separator {
+            border: none;
+            width: 10%;
+            height: 2px;
+            background-color: rgb(185, 185, 185);
+            transition: 0.3s all ease-in-out;
+            margin: 1rem 0 1rem 0;
+
+        }
+
+        p {
+          font-size: 1rem;
+          color: #222;
+          transition: 0.3s all ease-in-out;
+        }
+
+        .learn-more-button {
+            text-transform: uppercase;
+            color: #0744af;
+            font-size: 0.75rem;
+        }
+
+
+        @media screen and (min-width: 768px) {
+            grid-column: span 6;
+          }
+
+        @media screen and (min-width: 1367px) {
+            grid-column: span 4;
+        }
+
+        .grid-article-bottom-part {
+            margin-top: auto;
+        }
+    }
+}
+
+.grid-article:hover {
+    translate: 0 -10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .separator {
+        width: 100%;
+        background-color: #0744af;
+    }
+
+    p {
+        color: #0744af;
+    }
+}
+
+
+// Section 4 | Logos Section 
+.logos-gallery {
+    padding: 6rem 0;
+    background-color: rgb(7, 68, 175);
+}
