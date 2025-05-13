@@ -1,0 +1,133 @@
+// Footer
+.footer {
+    color: white;
+    padding: 6rem 0 1rem 0;
+    background-color: #222;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    img {
+        height: 90px;
+    }
+}
+
+.places-grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0;
+
+    @media screen and (min-width:767px) {
+        gap: 4rem;
+    }
+
+    .place-infos {
+        grid-column: span 10;
+
+        @media screen and (min-width:767px) {
+            grid-column: span 5;
+        }
+
+        @media screen and (min-width:1024px) {
+            grid-column: span 2;
+        }
+    }
+}
+
+.place-infos {
+    margin: 0 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+
+    padding: 10px 10rem;
+
+    @media screen and (min-width:767px) {
+        padding: 10px;
+    }
+}
+
+.place-title {
+    white-space: nowrap;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.adress, .map-link {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.phone-number {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.phone-number:hover, .map-link:hover {
+    text-decoration: underline;
+}
+
+
+// Social Medias Gallery
+.social-medias-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.social-medias {
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 200px;
+
+    a {
+        transition: 0.3s all ease-in-out;
+    }
+
+    a:hover {
+        color: #0744af;
+    }
+
+}
+
+// Disclaimer
+.footer-disclaimer {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+// Copyrights
+.copyrights-section {
+    padding: 3rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (min-width:952px) {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    
+    p {
+        font-size: 14px;
+        font-weight: 400;
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+

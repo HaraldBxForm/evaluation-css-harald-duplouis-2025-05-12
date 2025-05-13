@@ -8,7 +8,12 @@
   grid-template-columns: repeat(12, 1fr);
   justify-items: center;
   align-items: center;
-  gap: 3rem;
+  gap: 0rem;
+
+  @media screen and (min-width: 1024px) {
+    gap: 3rem;
+  }
+
 
   .left-part {
     grid-column: span 12;
@@ -70,6 +75,7 @@
   color: white;
   .two-elements-grid-container {
     div {
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -86,15 +92,15 @@
         align-items: flex-start;
 
         p {
-            text-align: left;
-          }
+          text-align: left;
+        }
       }
 
       @media screen and (min-width: 1024px) {
         grid-column: span 6;
         p {
-            text-align: left;
-          }
+          text-align: left;
+        }
       }
     }
   }
@@ -139,94 +145,224 @@
 // Section 3
 
 .legacy-of-winning-section {
-    padding: 6rem 0;
+  padding: 6rem 0;
 }
 
 .grid-articles-collection {
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 
-    justify-items: center;
-    align-items: flex-start;
-    gap: 1rem;
+  justify-items: center;
+  align-items: flex-start;
+  gap: 1rem;
 
-    .grid-article {
-        grid-column: span 12;
-        padding: 20px;
-        background-color: rgb(243, 245, 249);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 0.8rem;
-        align-self: stretch;
-        border-radius: 4px;
+  .grid-article {
+    grid-column: span 12;
+    padding: 20px;
+    background-color: rgb(243, 245, 249);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    align-self: stretch;
+    border-radius: 4px;
 
-        transition: 0.3s all ease-in-out;
-        box-shadow: rgba(149, 157, 165, 0.096) 0px 8px 24px;
-        
-        .separator {
-            border: none;
-            width: 10%;
-            height: 2px;
-            background-color: rgb(185, 185, 185);
-            transition: 0.3s all ease-in-out;
-            margin: 1rem 0 1rem 0;
-
-        }
-
-        p {
-          font-size: 1rem;
-          color: #222;
-          transition: 0.3s all ease-in-out;
-        }
-
-        .learn-more-button {
-            text-transform: uppercase;
-            color: #0744af;
-            font-size: 0.75rem;
-        }
-
-
-        @media screen and (min-width: 768px) {
-            grid-column: span 6;
-          }
-
-        @media screen and (min-width: 1367px) {
-            grid-column: span 4;
-        }
-
-        .grid-article-bottom-part {
-            margin-top: auto;
-        }
-    }
-}
-
-.grid-article:hover {
-    translate: 0 -10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.3s all ease-in-out;
+    box-shadow: rgba(149, 157, 165, 0.096) 0px 8px 24px;
 
     .separator {
-        width: 100%;
-        background-color: #0744af;
+      border: none;
+      width: 10%;
+      height: 2px;
+      background-color: rgb(185, 185, 185);
+      transition: 0.3s all ease-in-out;
+      margin: 1rem 0 1rem 0;
     }
 
     p {
-        color: #0744af;
+      font-size: 1rem;
+      color: #222;
+      transition: 0.3s all ease-in-out;
     }
+
+    .learn-more-button {
+      text-transform: uppercase;
+      color: #0744af;
+      font-size: 0.75rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      grid-column: span 6;
+    }
+
+    @media screen and (min-width: 1367px) {
+      grid-column: span 4;
+    }
+
+    .grid-article-bottom-part {
+      margin-top: auto;
+    }
+  }
 }
 
+.grid-article:hover {
+  translate: 0 -10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-// Section 4 | Logos Section 
+  .separator {
+    width: 100%;
+    background-color: #0744af;
+  }
+
+  p {
+    color: #0744af;
+  }
+}
+
+// Section 4 | Logos Section
 .logos-gallery {
-    padding: 6rem 0;
-    background-color: rgb(7, 68, 175);
+  padding: 6rem 0;
+  background-color: rgb(7, 68, 175);
 }
 
 .logos-gallery-grid {
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(12,  1fr);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
 
-    
+  @media screen and (min-width: 601px) {
+    justify-content: space-between;
+  }
 }
+
+.logos-gallery-image {
+  height: 100px;
+
+  img {
+    height: 100%;
+  }
+
+  .logo-1 {
+    height: 50%;
+  }
+}
+
+.logo-2,
+.logo-3,
+.logo-4,
+.logo-5,
+.logo-6 {
+  display: none;
+}
+
+@media screen and (min-width: 601px) {
+  .logo-2,
+  .logo-3 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .logo-4,
+  .logo-5 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-6 {
+    display: block;
+  }
+}
+
+// Section 5 | Former Justice Department
+
+.former-justice-section {
+  position: relative;
+  color: white;
+  padding: 6rem 0;
+  background-image: url("/img/shutterstock_2314958033.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.former-justice-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 69, 175, 0.836);
+  z-index: 0;
+}
+
+.former-justice-articles-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.former-justice-article {
+  margin: 1rem 0;
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    grid-column: span 4;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .button:hover {
+    background-color: white;
+    color: rgb(7, 68, 175);
+  }
+
+}
+
+.article-title {
+  font-size: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0 0 16px;
+  transition: 0.3s all ease-in-out;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+}
+
+.article-title:hover {
+  text-decoration: underline;
+}
+
+.article-date {
+  font-size: 0.75rem;
+  margin: 0 0 24px;
+}
+
+.article-content {
+  font-size: 0.938rem;
+  margin: 0 0 24px;
+}
+
