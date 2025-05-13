@@ -13,13 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3379e155de.js" crossorigin="anonymous"></script>
 
@@ -27,33 +30,293 @@
     <title>Evaluation | CSS | Harald Duplouis | Contact</title>
   </head>
   <body class="contact-body">
-    <!-- Header -->
-    <header class="header-wrapper">
-      <div class="nav-container">
-        <!-- Logo -->
-        <a href="" class="logo"><img src="./img/hicks-thomas-logo-new-blue-mark.png" alt="" /></a>
+    <!-- Accessibility Overlay -->
+    <div class="accessibility">
+      <a href="index.html"><img src="./img/25ff9f_17f54555c24042e5aecb6a07838736b0_mv2-_1_.png" alt="accessibiliy" height="90px" width="90px" /></a>
+    </div>
 
-        <!-- Nav Links -->
-        <nav class="large-version-menu">
-          <a href="index.html">Home</a>
-          <a href="attorneys_page.html">Attorneys</a>
-          <a href="">Practice Areas</a>
-          <a href="">News</a>
-          <a href="">Vidéo Center</a>
-          <a href="contact.html" class="active-page">Contact</a>
-          <!-- Logo Loupe -->
-          <i class="fa-solid fa-magnifying-glass-plus"></i>
-        </nav>
-        <nav class="mobile-version-menu">
-          <a href=""><i class="fa-solid fa-bars"></i></a>
-        </nav>
+    <!-- Phone Overlay -->
+    <div class="phone-overlay">
+      <a href="#" class="phone-overlay-text">
+        <i class="fa-solid fa-phone-volume"></i>
+        Call: 713-547-9100
+      </a>
+    </div>
+
+    <!-- Header -->
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#" class="logo"><img src="./img/hicks-thomas-logo-new-blue-mark.png" alt="hicks-thomas-logo-new-blue-mark.png" /></a>
+
+      <!-- Nav Links -->
+      <nav class="large-version-menu">
+        <a href="index.html">Home</a>
+        <a href="attorneys_page.html">Attorneys</a>
+        <a href="#">Practice Areas</a>
+        <a href="#">News</a>
+        <a href="#">Vidéo Center</a>
+        <a href="contact.html" class="active-page">Contact</a>
+        <!-- Logo Loupe -->
+        <i class="fa-solid fa-magnifying-glass-plus"></i>
+      </nav>
+      <nav class="mobile-version-menu">
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+      </nav>
+    </div>
+
+    <!-- Section 1 | Formulaire -->
+    <section class="form-section">
+      <div class="main-wrapper form-global-wrapper">
+        <div class="form-header">
+          <p class="form-title">Contact Hicks Thomas LLP</p>
+          <p class="form-subtitle">- Learn About Our Innovative Legal Solutions -</p>
+        </div>
+        <form action="" class="form-box">
+          <input type="text" class="first-name" placeholder="Fist name" />
+          <input type="text" class="last-name" placeholder="Last name" />
+          <input type="email" class="input-email" placeholder="E-mail" />
+          <input type="tel" class="input-tel" placeholder="Phone" />
+          <!-- Menu Déroulant -->
+          <select name="client-status" id="" class="client-status-select">
+            <option value="">Are you a new client ?</option>
+            <option value="">Yes, I am a potential new client.</option>
+            <option value="">No, I am an existing client.</option>
+            <option value="">I'm neither.</option>
+          </select>
+          <input type="text" placeholder="Message" class="form-message" />
+          <!-- Form Disclaimer -->
+        </form>
+        <div class="form-bottom">
+          <p class="form-disclaimer">
+            <b>Your privacy matters:</b>
+            We encourage you to contact us through this form. While reaching out does not create an attorney-client relationship, we value your
+            privacy and will protect your information. Please avoid sharing confidential details until a formal relationship is established.
+          </p>
+          <div class="form-button-container"><button class="submit-button" type="submit">Submit Form</button></div>
+        </div>
       </div>
-      </header>
+    </section>
+
+    <!-- Section 2 | Maps -->
+    <section class="maps-section">
+      <div class="main-wrapper maps-grid-container">
+        <!-- Map Card 1 -->
+        <div class="map-card map-card-1">
+          <!-- Map Card Top -->
+          <div class="map-card-top">
+            <p class="map-title">Houston Office</p>
+            <div class="map-card-text-content">
+              <div class="map-card-adress">
+                700 Louisiana St.
+                <br />
+                Suite 2300
+                <br />
+                Houston, TX 77002
+              </div>
+              <div class="map-card-contact-infos">
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  713-547-9100
+                </a>
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-square-phone-flip"></i>
+                  713-547-9150
+                </a>
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  Directions
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Map Card Bottom -->
+          <div class="map-card-bottom map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13854.360814528694!2d-95.366231!3d29.760571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bf3a12c372f9%3A0x8e4c40aedec5c78a!2sHicks%20Thomas%20LLP!5e0!3m2!1sen!2sus!4v1747135536768!5m2!1sen!2sus"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Map Card 2 -->
+        <div class="map-card map-card-2">
+          <!-- Map Card Top -->
+          <div class="map-card-top">
+            <p class="map-title">Austin Office</p>
+            <div class="map-card-text-content">
+              <div class="map-card-adress">
+                111 Congress Ave.
+                <br />
+                Suite 1010
+                <br />
+                Austin, TX 78701
+              </div>
+              <div class="map-card-contact-infos">
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  512-827-7990
+                </a>
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-square-phone-flip"></i>
+                  409-419-1733
+                </a>
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  Directions
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Map Card Bottom -->
+          <div class="map-card-bottom map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13784.286129820948!2d-97.743539!3d30.263542999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b507c51dfe63%3A0xdea1a48f4071f6b1!2sHicks%20Thomas%20LLP!5e0!3m2!1sen!2sus!4v1747143684380!5m2!1sen!2sus"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Map Card 3 -->
+        <div class="map-card map-card-3">
+          <!-- Map Card Top -->
+          <div class="map-card-top">
+            <p class="map-title">Amarillo Office</p>
+            <div class="map-card-text-content">
+              <div class="map-card-adress">
+                619 S. Tyler St.
+                <br />
+                Suite 80B
+                <br />
+                Amarillo, TX 79101
+              </div>
+              <div class="map-card-contact-infos">
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  806-310-9990
+                </a>
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-square-phone-flip"></i>
+                  713-547-9150
+                </a>
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  Directions
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Map Card Bottom -->
+          <div class="map-card-bottom map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13854.356113628955!2d-95.366343!3d29.760605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87014efea91c93d7%3A0xfd139726a581a69c!2sHicks%20Thomas%20LLP!5e0!3m2!1sen!2sus!4v1747143748390!5m2!1sen!2sus"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Map Card 4 -->
+        <div class="map-card map-card-4">
+          <!-- Map Card Top -->
+          <div class="map-card-top">
+            <p class="map-title">Beaumont Office</p>
+            <div class="map-card-text-content">
+              <div class="map-card-adress">
+                2615 Calder Ave.
+                <br />
+                Suite 720
+                <br />
+                Beaumont, TX 77702
+              </div>
+              <div class="map-card-contact-infos">
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  409-241-7252
+                </a>
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-square-phone-flip"></i>
+                  409-419-1733
+                </a>
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  Directions
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Map Card Bottom -->
+          <div class="map-card-bottom map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13809.238870260288!2d-94.127703!3d30.085315000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863ecacfd5d46ac5%3A0xff86fffa2168854c!2sHicks%20Thomas%20LLP!5e0!3m2!1sen!2sus!4v1747143769149!5m2!1sen!2sus"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Map Card 5 -->
+        <div class="map-card map-card-5">
+          <!-- Map Card Top -->
+          <div class="map-card-top">
+            <p class="map-title">Sacramento Office</p>
+            <div class="map-card-text-content">
+              <div class="map-card-adress">
+                701 University Ave.
+                <br />
+                Suite 106
+                <br />
+                Sacramento, CA 95825
+              </div>
+              <div class="map-card-contact-infos">
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  916-447-4900
+                </a>
+                <a href="#" class="map-card-info">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  Directions
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Map Card Bottom -->
+          <div class="map-card-bottom map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12478.2999445318!2d-121.41991!3d38.566605!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809adadcc51b2dd3%3A0x1ec7c2cddf745e65!2sHicks%20Thomas%20LLP!5e0!3m2!1sen!2sus!4v1747143790051!5m2!1sen!2sus"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
     <footer class="footer">
       <div class="main-wrapper footer-content-wrapper">
         <!-- Logo -->
-        <a href="" class="footer-logo"><img src="./img/hicks-thomas-logo-new-white.png" alt=""></a>
+        <a href="#" class="footer-logo"><img src="./img/hicks-thomas-logo-new-white.png" alt="" /></a>
 
         <!-- Places Informations -->
         <div class="places-grid-container">
@@ -64,9 +327,9 @@
             <!-- Adress -->
             <p class="adress">700 Louisiana St. Suite 2300 Houston, TX 77002</p>
             <!-- Phone -->
-            <a href="" class="phone-number">713-547-9100</a>
+            <a href="#" class="phone-number">713-547-9100</a>
             <!-- Map Link -->
-            <a href="" class="map-link">
+            <a href="#" class="map-link">
               <i class="fa-solid fa-location-dot"></i>
               Map & Directions
             </a>
@@ -79,9 +342,9 @@
             <!-- Adress -->
             <p class="adress">111 Congress Ave. Suite 1010 Austin, TX 78701</p>
             <!-- Phone -->
-            <a href="" class="phone-number">512-827-7990</a>
+            <a href="#" class="phone-number">512-827-7990</a>
             <!-- Map Link -->
-            <a href="" class="map-link">
+            <a href="#" class="map-link">
               <i class="fa-solid fa-location-dot"></i>
               Map & Directions
             </a>
@@ -94,9 +357,9 @@
             <!-- Adress -->
             <p class="adress">619 S. Tyler St. Suite 80B Amarillo, TX 79101</p>
             <!-- Phone -->
-            <a href="" class="phone-number">806-310-9990</a>
+            <a href="#" class="phone-number">806-310-9990</a>
             <!-- Map Link -->
-            <a href="" class="map-link">
+            <a href="#" class="map-link">
               <i class="fa-solid fa-location-dot"></i>
               Map & Directions
             </a>
@@ -109,9 +372,9 @@
             <!-- Adress -->
             <p class="adress">2615 Calder Ave. Suite 720 Beaumont, TX 77702</p>
             <!-- Phone -->
-            <a href="" class="phone-number">409-241-7252</a>
+            <a href="#" class="phone-number">409-241-7252</a>
             <!-- Map Link -->
-            <a href="" class="map-link">
+            <a href="#" class="map-link">
               <i class="fa-solid fa-location-dot"></i>
               Map & Directions
             </a>
@@ -124,9 +387,9 @@
             <!-- Adress -->
             <p class="adress">701 University Ave. Suite 106 Sacramento, CA 95825</p>
             <!-- Phone -->
-            <a href="" class="phone-number">916-447-4900</a>
+            <a href="#" class="phone-number">916-447-4900</a>
             <!-- Map Link -->
-            <a href="" class="map-link">
+            <a href="#" class="map-link">
               <i class="fa-solid fa-location-dot"></i>
               Map & Directions
             </a>
@@ -136,11 +399,11 @@
         <!-- Social Medias Gallery -->
         <div class="social-medias-container">
           <div class="social-medias">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-google"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google"></i></a>
           </div>
         </div>
 
@@ -156,14 +419,14 @@
         <div class="copyrights-section">
           <p>
             © 2025
-            <a href="">Hicks Thomas LLP</a>
+            <a href="#">Hicks Thomas LLP</a>
             |
-            <a href="">Privacy Policy</a>
+            <a href="#">Privacy Policy</a>
             |
-            <a href="">Site Map</a>
+            <a href="#">Site Map</a>
           </p>
           <p>
-            <a href="">Law Firm Website Design</a>
+            <a href="#">Law Firm Website Design</a>
             by Dan Gilroy Design
           </p>
         </div>

@@ -8,10 +8,18 @@
 
 .button-blue {
     background-color: #0744af;
+
+    &:hover {
+        background-color: #0745af96;
+    }
 }
 
 .button-black {
     background-color: black;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.623);
+    }
 }
 
 .button-white {
